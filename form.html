@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta description="Form">
+</head>
+
+<body>
+    <div>
+        <h1>Buat Account Baru!</h1>
+    </div>
+    
+    <div>
+        <form action="welcome.html" method="POST">
+            <legend>
+                <h3>Sign Up Form</h3>
+            </legend>
+            <p>
+                <label for="first-name">First Name:</label>
+                <br/>
+                <input id="first-name" name="firstNama" type="text">
+            </p>
+            <p>
+                <label for="last-name">Last Name:</label>
+                <br/>
+                <input id="last-name" name="lastNama" type="text">
+            </p>
+    </div>
+
+    <div>
+        <p>
+            <label for="gender">Gender:</label>
+            <br/>
+            <input id="male-radio" type="radio" name="gender" Value="male">
+            <label for="male-radio">Male</label>
+            <br/>
+            <input id="female-radio" type="radio" name="gender" Value="female">
+            <label for="female-radio">Female</label>
+            <br/>
+            <input id="others-radio" type="radio" name="gender" Value="others">
+            <label for="others-radio">Others</label>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <label for="nationality">Nationality:</label>
+            <br/>
+            <input type="text" name="nationality" list="nationalityLangs">
+            <datalist id="nationalityLangs">
+                <select>
+                    <option value="indonesian">Indonesian</option>
+                    <option value="malaysian">Malaysian</option>
+                    <option value="singaporean">Singaporean</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="australian">Australian</option>
+                </select>
+            </datalist>
+            </label>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <label for="language-spoken">Language Spoken:</label>
+            <br/>
+            <input id=bahasa-checkbox type="checkbox" name="language" value="Bahasa Indonesia">
+            <label for="bahasa-checkbox">Bahasa Indonesia</label>
+            <br/>
+            <input id=bahasa-checkbox type="checkbox" name="language" value="English">
+            <label for="english-checkbox">English</label>
+            <br/>
+            <input id=others-checkbox type="checkbox" name="language" value="Others">
+            <label for="others-checkbox">Others</label>
+            </label>
+        </p>
+    </div>
+
+    <div>
+        <label for="bio">Bio:</label>
+        <br/>
+        <textarea name="Bio" id="bio" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" value="Sign Up">
+    </form>
+
+</body>
+
+</html>
